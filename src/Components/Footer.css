@@ -1,0 +1,257 @@
+.footer {
+  background: #060e3d;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.footer-circuit {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(27, 63, 219, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 63, 219, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.footer > .container {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+
+/* Top Grid */
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+/* Brand */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.footer-logo-icon svg {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 0 6px rgba(0,212,255,0.4));
+}
+
+.footer-logo-name {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-logo-co {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: var(--accent);
+  letter-spacing: 4px;
+}
+
+.footer-tagline {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  max-width: 300px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-link {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.25s;
+}
+
+.social-link:hover {
+  background: var(--royal-blue);
+  border-color: var(--royal-blue);
+  color: white;
+}
+
+/* Columns */
+.footer-col-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(0,212,255,0.2);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-links a {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-links a::before {
+  content: "→";
+  font-size: 0.7rem;
+  color: var(--royal-blue-xlight);
+  transition: transform 0.2s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-links a:hover::before {
+  transform: translateX(3px);
+}
+
+/* Contact */
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+
+.contact-icon {
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-item a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-item a:hover {
+  color: var(--accent);
+}
+
+/* GST Strip */
+.footer-gst-strip {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.gst-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.gst-label {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+
+.gst-value {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 1px;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.3);
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal a {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-legal a:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 1024px) {
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-gst-strip { flex-direction: column; gap: 1.25rem; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .footer-legal { justify-content: center; }
+}

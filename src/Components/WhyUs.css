@@ -1,0 +1,170 @@
+.why-us {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(140deg, #0d1e7a 0%, #1b3fdb 50%, #0a1860 100%);
+}
+
+.why-bg-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.why-container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-tag-white {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-title.white {
+  color: white;
+}
+
+.section-subtitle.white-sub {
+  color: rgba(255,255,255,0.65);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.why-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.why-card:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(0,212,255,0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+.why-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.why-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0.6rem;
+}
+
+.why-desc {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: rgba(0,212,255,0.08);
+  border: 1px solid rgba(0,212,255,0.25);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cta-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.cta-sub {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.cta-btn-solid {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  background: var(--accent);
+  color: var(--royal-blue-dark);
+  border-radius: 5px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0,212,255,0.35);
+}
+
+.cta-btn-solid:hover {
+  background: white;
+  box-shadow: none;
+}
+
+.cta-btn-outline {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 5px;
+  transition: all 0.25s ease;
+}
+
+.cta-btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+}
+
+@media (max-width: 1024px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .cta-banner { padding: 1.75rem; flex-direction: column; }
+  .cta-buttons { width: 100%; flex-direction: column; }
+  .cta-btn-solid, .cta-btn-outline { text-align: center; }
+}
