@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Services from './components/Services';
 import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
+import Services from './components/Services';
 import './App.css';
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <div className="app">
       <Navbar />
       <Hero />
-      <Services />
       <WhyUs />
+      <Services />
       <Footer />
     </div>
   );
